@@ -1,4 +1,5 @@
 # Bases-Kotlin
-Fundamentos basico de Kotlin
 
-ESTADO: FINALIZADO
+Kotlin Basics
+
+STATUS: FINALIZED

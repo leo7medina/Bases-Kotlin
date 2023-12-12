@@ -89,6 +89,10 @@ fun helloWorld(args: Array<String>) {
     // Try adding program arguments via Run/Debug configuration.
     // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
     println("Program arguments: ${args.joinToString()}")
+    println()
+    println()
+    println()
+    menuPrincipal(args)
 }
 
 
@@ -118,6 +122,14 @@ fun exampleVariableAndType() {
     val lastName = "Medina"
     val nameComplete = firstName + lastName
     println(nameComplete)
+    returnMenu()
+}
+
+fun returnMenu() {
+    println()
+    println()
+    println()
+    menuPrincipal(arrayOf(""))
 }
 
 //CONCIDIONALES
@@ -135,9 +147,12 @@ fun exampleIF() {
         "Tienes un nombre corto"
     }
     println(message)
+    returnMenu()
 }
 
 fun exampleWhen() {
+    println()
+    print("Ingrese un color: ")
     val nameColor = readLine()!!.toString()
     when(nameColor) {
         "Amarillo" -> println("El amarillo es el color de la alegria")
@@ -160,6 +175,7 @@ fun exampleWhen() {
         else -> "Estos zapatos solo vienen en tallas: 41, 42, 43, 44, 45"
     }
     println(message)
+    returnMenu()
 }
 
 // CLICOS
@@ -176,6 +192,7 @@ fun exampleWhile() {
         val numberAl = (0..100).random()
         println("El numero generado es $numberAl")
     } while (numberAl > 50)
+    returnMenu()
 }
 
 fun exampleFor() {
@@ -191,6 +208,7 @@ fun exampleFor() {
 
     val listFiltered = listNumber.filter { n -> n > 5 }
     println(listFiltered)
+    returnMenu()
 }
 
 //EXCEPCIONES
@@ -209,12 +227,14 @@ fun exampleTryCatch() {
     val secondValue = 0
     val result : Int = try { firstValue / secondValue} catch (exception: java.lang.Exception) { 0 }
     println(result)
+    returnMenu()
 }
 
 fun exampleElvisOperator() {
     var name: String? = null
     var sizeName = name?.length ?: 0
     println(sizeName)
+    returnMenu()
 }
 
 fun exampleList() {
@@ -560,12 +580,3 @@ private fun mostrarRespuestasPorTipo(tipoDeRespuesta : String = "TODOS") {
             .also { respuestasDudosas -> println(respuestasDudosas.keys) }
     }
 }
-asdasdasdasdas
-asdasdasdasdas
-asdasdasdasdasdasdasd
-23123123
-
-sadasdasdasd
-
-
-asdasdasdasdas
